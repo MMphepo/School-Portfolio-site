@@ -300,3 +300,41 @@ footer {
   font-weight: 300;
   font-style: normal;
 }
+
+/* testimonial section container */
+.testimonials{
+    overflow-x: scroll;
+}
+.test-cont{
+    min-width: 40em;
+
+}
+.test-img-cont{
+    width: 50%;
+}
+.test-img-cont>img{
+    width: 100%;
+    border-radius: 2em;
+}
+.test-text{
+    width: 50%;
+}
+.test-icon{
+    font-size: 5em;
+    background-image: linear-gradient(150deg, #00df81, green );
+    background-clip: text;
+    color: transparent;
+}
+.test-mess{
+    font-size: 0.9em;
+}
+.test-name{
+    font-size: 0.95em;
+}
+.test-proff{
+    font-size: 0.7em;
+}
+.test-btns{
+    width: 7em;
+    justify-content: space-between;
+}
