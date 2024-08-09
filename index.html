@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/Mystyles.css">
+  <link rel="stylesheet" href="css/css/bootstrap.css">
+  <link rel="stylesheet" href="css/css/bootstrap-utilities.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Noto+Sans+Shavian&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Major+Mono+Display&family=Noto+Sans+Shavian&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    section a {
+      border-radius: 0.5em;
+    }
+  </style>
+  <title>Home Page</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg " style="color: #ffffff;">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler" style="background-color:#03624C; " onclick="toggleDiv()" type="button"
+              data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="  filter: contrast(0);"></span>
+
+
+
+            </button>
+            <div class="nameResize">
+              <a class="nav-link active " style="color: #ffffff;" aria-current="page" href="#"><img
+                  src="media/FnbR2i56iOgG0Hz8AyklS92yYHVoMLfxB2ye-removebg-preview.png" alt="" srcset=""
+                  class="logo"></a>
+
+            </div>
+            <div class="navbar-brand text-center nameResize major-mono-display-regular" style="color: #ffffff;" href="#">MyO</div>
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title major-mono-display-regular fs-2"  style="color: #00DF81;" id="offcanvasNavbarLabel">MyO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="color: #00DF81;" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body fs-4">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active source-code-pro-light" style="color: #00DF81;" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link source-code-pro-light" style="color: #00DF81;" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle source-code-pro-light" style="color:#00DF81 ;" href="#" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: transparent;">
+                      <li><a class="dropdown-item source-code-pro-light" href="#" style=" color:#00DF81">Company Details</a></li>
+                      <li><a class="dropdown-item source-code-pro-light" href="#" style=" color:#00DF81">Developer Deyails</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item source-code-pro-light" style="color: #00DF81;" href="#">More services</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success source-code-pro-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active " style="color: #ffffff;" aria-current="page" href="#"><img
+                      src="media/FnbR2i56iOgG0Hz8AyklS92yYHVoMLfxB2ye-removebg-preview.png" alt="" srcset=""
+                      class="logo"></a>
+                </li>
+                <li class="nav-item m-auto">
+                  <a class="nav-link m-auto source-code-pro-light" style="color: #ffffff;" href="pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown m-auto ">
+                  <a class="nav-link dropdown-toggle m-auto source-code-pro-light" style="color: #ffffff;" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    About
+                  </a>
+                  <ul class="dropdown-menu" style="background-color: rgb(2, 27, 26); border-top:1px solid #00DF81; ">
+                    <li><a class="dropdown-item source-code-pro-light" href="#" style=" color:#00DF81">Company details</a></li>
+                    <li><a class="dropdown-item source-code-pro-light" href="#" style=" color:#00DF81">Developer details</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item source-code-pro-light" href="#" style=" color:#00DF81">More services</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <a  class="navbar-brand m-auto major-mono-display-regular"
+                  style="color: #ffffff; padding-left: 2em; font-size: 2em; letter-spacing: 4px;" 
+                  href="#">
+                    MyO
+              </a>
+              <form class="d-flex" role="search">
+                <input id="srch" class="form-control me-2" style="background-color: transparent;  color: white;"
+                  type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="m-auto L-content text-light mt-5 text-center">
+          <div class="mt-5 calltop">Right Choices</div>
+          <h1 class="text-responsive call">Learn Your Way Up To The Top Of The Game</h1>
+          <div class="mt-5">
+            <button class=" p-2 px-5 font-weight-bold cta source-code-pro-light">
+              Check out our work
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </header>
+  <section class="advert ">
+    <h1 class="text-black source-code-pro-light">
+      All you need to get started
+    </h1>
+    <div class="container cards mt-5">
+      <div class="card" style="width: 18rem;">
+        <img src="media/pexels-padrinan-1591061.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title source-code-pro-light">HTML Skills</h5>
+          <p class="card-text source-code-pro-light">HTML is the foundation of web development. Learning HTML, you'll gain the essential
+            skills to create and structure web pages
+          </p>
+          <button href="#" class=" p-2 Cardlink source-code-pro-light" data-bs-toggle="modal" data-bs-target="#HTMLmore">More info</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="HTMLmore" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content ">
+              <div class="modal-header ">
+                <h1 class="modal-title fs-5 text-black source-code-pro-light" id="exampleModalLabel">HTML Skills</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body mod">
+                <div class=" d-flex">
+                  <div class="d-flex">
+                    <div class="circles">
+                      <div class="number b-rounded">1</div>
+                      <div class="number">2</div>
+                      <div class="number">3</div>
+                      <div class="number">4</div>
+                      <div class="number">5</div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="paragraphs">
+                    <div class="para">
+                      <span class="p-heading">Building Blocks of Web Pages:</span> Learn to use tags and elements to
+                      structure content, such as
+                      headings,
+                      paragraphs, lists, and links.
+                    </div>
+
+                    <div class="para">
+                      <span class="p-heading">Embedding Media:</span> Discover how to incorporate images, videos, and
+                      audio to make your web pages
+                      dynamic
+                      and engaging.
+                    </div>
+
+                    <div class="para">
+                      <span class="p-heading">Creating Forms:</span> Gain the ability to build interactive forms for
+                      collecting user input, such as
+                      contact
+                      forms and surveys.
+                    </div>
+
+                    <div class="para">
+                      <span class="p-heading">Hyperlinks:</span> Understand how to connect your web pages to other pages
+                      and resources,
+                      making
+                      navigation seamless.
+                    </div>
+
+                    <div class="para">
+                      <span class="p-heading">Semantic HTML:</span> Use HTML5 to improve the accessibility and SEO of
+                      your web pages by using semantic
+                      tags
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="media/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title source-code-pro-light">CSS Skills</h5>
+          <p class="card-text source-code-pro-light" style="font-size: 0.979em;">
+            CSS is the key to making web pages look beautiful. You'll be able
+            to transform plain HTML into visually
+            appealing websites
+          </p>
+          <button href="#" class="p-2 Cardlink source-code-pro-light" data-bs-toggle="modal" data-bs-target="#CSSmore">More info</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="CSSmore" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content ">
+              <div class="modal-header ">
+                <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">CSS Skills</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body mod">
+                <div class=" d-flex">
+                  <div class="d-flex">
+                    <div class="circles">
+                      <div class="number b-rounded">1</div>
+                      <div class="number">2</div>
+                      <div class="number">3</div>
+                      <div class="number">4</div>
+                      <div class="number">5</div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="paragraphs">
+                    <div class="para">
+                      <span class="p-heading">Layout Design:</span> know how to use layouts, grids, and flexbox to
+                      arrange elements on your page precisely where you please.
+                    </div>
+
+                    <div class="para">
+                      <span class="p-heading">Styling Text and Fonts:</span> Learn to change the color, size, and style
+                      of text to make your content
+                      stand out.
+                    </div>
+
+                    <div class="para">
+                      <span class="p-heading">Colors and Backgrounds:</span> Gain the ability to set background colors,
+                      images, and gradients, enhancing
+                      the visual appeal of your site.
+                    </div>
+
+                    <div class="para">
+                      <span class="p-heading">Responsive Design::</span> Master ways to make your web pages look
+                      great on any device, from mobile phones to large monitors.
+                    </div>
+
+                    <div class="para">
+                      <span class="p-heading">Animations and Transitions:</span> Learn to add dynamic effects and smooth
+                      transitions to elements, making your web pages engaging.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="media/pexels-markusspiske-2004161.jpg" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+          <h5 class="card-title source-code-pro-light">JavaScript Skills</h5>
+          <p class="card-text source-code-pro-light">
+            JavaScript is the powerhouse that allows not only beauty but adds interactivity and dynamic behavior to web
+            pages.</p>
+          <button class=" p-2  Cardlink source-code-pro-light" data-bs-toggle="modal" data-bs-target="#JSmore">More info</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="JSmore" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content ">
+              <div class="modal-header ">
+                <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">JavaScript Skills</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body mod">
+                <div class=" d-flex">
+                  <div class="d-flex">
+                    <div class="circles">
+                      <div class="Jnumber b-rounded">1</div>
+                      <div class="Jnumber">2</div>
+                      <div class="Jnumber">3</div>
+                      <div class="Jnumber">4</div>
+                      <div class="Jnumber">5</div>
+                    </div>
+                    <div class="Jline"></div>
+                  </div>
+                  <div class="paragraphs">
+                    <div class="Jpara">
+                      <span class="p-heading">Dynamic Content:</span> Learn to manipulate HTML and CSS to change content
+                      and styles on the fly, creating interactive web pages.
+                    </div>
+
+                    <div class="Jpara">
+                      <span class="p-heading">Event Handling:</span>learn how to respond to user actions, such as
+                      clicks, key presses, and form submissions, to make your site responsive and user-friendly.
+                    </div>
+
+                    <div class="Jpara">
+                      <span class="p-heading">Data Manipulation:</span> Gain the ability to process and display data,
+                      fetch data from APIs, and update the content without refreshing the page.
+                    </div>
+
+                    <div class="Jpara">
+                      <span class="p-heading">Functions and Control Structures:</span> Understand how to write reusable
+                      code with functions and control
+                      the flow of your program with loops and conditionals.
+                    </div>
+
+                    <div class="Jpara">
+                      <span class="p-heading">DOM Manipulation:</span> Master the Document Object Model (DOM) to
+                      dynamically access and update the
+                      content and structure of your web pages.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="d-flex cont">
+      <div>
+        <a class="nav-link active " style="color: #ffffff;" aria-current="page" href="#"><img
+            src="media/FnbR2i56iOgG0Hz8AyklS92yYHVoMLfxB2ye-removebg-preview.png" alt="" srcset="" class="logo"></a>
+      </div>
+      <div class="d-flex social fs-4">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <div class="text-black  rights source-code-pro-light">MyO 2024. All rights reserved</div>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleDiv() {
+    var div = document.getElementById("offcanvasNavbar");
+    if (div.classList.contains("show")) {
+      div.classList.remove("show");
+      setTimeout(() => { div.style.display = "none"; }, 300); // Wait for transition to complete
+    } else {
+      div.style.display = "flex";
+      setTimeout(() => { div.classList.add("show"); }, 10); // Allow display to update before transition
+    }
+  }
+  window.addEventListener('resize', () => {
+    var div = document.getElementById("offcanvasNavbar");
+    if (window.innerWidth >= 992) {
+      div.classList.remove("show");
+      div.style.display = "none";
+    }
+  });
+  document.addEventListener('click', function (event) {
+    var div = document.getElementById("offcanvasNavbar");
+    var button = document.querySelector('button');
+    if (div.classList.contains('show') && !div.contains(event.target) && !button.contains(event.target)) {
+      div.classList.remove("show");
+      setTimeout(() => { div.style.display = "none"; }, 300); // Wait for transition to complete
+    }
+  });
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+  crossorigin="anonymous"></script>
+<script type="importmap">
+{
+  "imports": {
+    "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+  }
+}
+</script>
+<script type="module">
+  import * as bootstrap from 'bootstrap'
+
+  new bootstrap.Popover(document.getElementById('popoverButton'))
+</script>
+
+</html>

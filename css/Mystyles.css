@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Major+Mono+Display&family=Noto+Sans+Shavian&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Source+Code+Pro:wght@697&display=swap');
+
+header {
+    background-image: url(../media/pexels-muhammad-khairul-iddin-adnan-267454-808510.jpg);
+    height: 43.4em;
+}
+
+#srch::placeholder {
+    color: white;
+}
+
+#offcanvasNavbar {
+    display: none;
+    color: #03624C;
+    background-color: rgb(2, 27, 26);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#offcanvasNavbar.show {
+    display: flex;
+    opacity: 1;
+}
+
+.L-content>h1 {
+    font-size: 3rem;
+}
+
+.nameResize {
+    display: none;
+}
+
+@media (max-width: 1366px) {
+    .advert>.cards {
+        justify-content: space-between;
+        display: flex;
+    }
+}
+
+@media (max-width: 991px) {
+    .L-content>h1 {
+        font-size: 3em;
+        /* Smaller font size for small screens */
+    }
+
+    .nameResize {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .advert>.cards {
+        display: block;
+    }
+
+    .advert>.cards>.card {
+        margin: auto;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 720px) {
+    .L-content>h1 {
+        font-size: 2em;
+        /* Smaller font size for small screens */
+    }
+
+
+}
+
+header .dropdown-item:hover {
+    background-color: rgba(3, 98, 76, .5);
+    transition: .4s;
+}
+
+.cta {
+    background-color: #00DF81;
+    color: rgb(2, 27, 26);
+    border: none;
+    border-radius: 1em;
+    transition: 0.3s ease-in;
+    border: 1px solid transparent;
+}
+
+.cta:hover {
+    background-color: rgba(2, 27, 26, .5);
+    color: #00df81;
+    border: 1px solid #00DF81;
+}
+
+.logo {
+    width: 5em;
+}
+
+.advert {
+    padding-top: 5em;
+    min-height: 43.4em;
+    background-color: #68eb8f;
+
+}
+
+.advert>h1 {
+    margin-left: 3em;
+}
+
+.advert>.cards>.card {
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.35);
+}
+
+.Cardlink {
+    background-color: #00DF81;
+    color: rgb(2, 27, 26);
+    border: none;
+    border-radius: 0.5em;
+    transition: 0.3s ease-in;
+    border: 1px solid transparent;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.Cardlink:hover {
+    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.35);
+}
+
+.modal-header {
+    background-color: #06c144;
+    color: rgb(255, 255, 255);
+}
+
+.number {
+    background-color: #00df81;
+    border-radius: 50%;
+    padding: 0.3em;
+    padding-inline: 0.7em;
+    margin-bottom: 2.3em;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.Jnumber {
+    background-color: #00df81;
+    border-radius: 50%;
+    padding: 0.3em;
+    padding-inline: 0.7em;
+    margin-bottom: 2.7em;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.circles {
+    margin-top: 1em;
+    z-index: 4;
+}
+
+.line {
+    margin-top: 1em;
+    height: 33em;
+    width: 7px;
+    background-color: #00DF81;
+    margin-left: -1.99em;
+
+    z-index: 3;
+}
+
+.Jline {
+    margin-top: 1em;
+    height: 34em;
+    width: 7px;
+    background-color: #00DF81;
+    margin-left: -1.99em;
+
+    z-index: 3;
+}
+
+.paragraphs {
+    margin-left: 2em;
+}
+
+footer {
+
+    background-color: #03624C;
+}
+
+.cont {
+    justify-content: space-between;
+}
+
+.social,
+.rights {
+    margin-block: auto;
+
+}
+
+.social {
+    padding: 0.5em;
+    width: 1em;
+}
+
+.social i {
+    width: 2em;
+    margin-inline: 0.3em;
+}
+
+.rights {
+    margin-right: 1em;
+}
+
+.p-heading {
+    display: block;
+    font-size: 1.13em;
+    letter-spacing: 2px;
+    border-bottom: 3px solid green;
+
+}
+
+.mod {
+    background-color: #d9ffd5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.para {
+    background-color: #0e2a0f1a;
+    margin-bottom: 1.3em;
+    border-style: solid;
+    border-width: 0px 7px 0px 0px;
+    border-color: black;
+    border-right-color: #00df81;
+    
+    padding-left: 0.4em;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    height: 6.3em;
+}
+
+.Jpara {
+    background-color: #0e2a0f1a;
+    margin-bottom: 1.3em;
+    border-style: solid;
+    border-width: 0px 7px 0px 0px;
+    border-color: black;
+    border-right-color: #00df81;
+    
+    padding-left: 0.4em;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    height: 6.8em;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.call {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.calltop {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.major-mono-display-regular {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.major-mono-display-bold {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 800;
+    font-style: normal;
+}
+.source-code-pro-light {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}

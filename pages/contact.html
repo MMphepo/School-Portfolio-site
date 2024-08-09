@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us via Email</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>Please fill out the form below to send us an email.</p>
+    
+    <!-- Input fields for user email and message -->
+    <label for="userEmail">Your Email:</label>
+    <input type="email" id="userEmail" placeholder="Your email address" required><br><br>
+    
+    <label for="emailBody">Your Message:</label>
+    <textarea id="emailBody" placeholder="Type your message here" required></textarea><br><br>
+    
+    <!-- Button to initiate email -->
+    <button onclick="sendEmail()">Send Email</button>
+
+    <script>
+        function sendEmail() {
+            // Get user input from the input fields
+            var userEmail = document.getElementById('userEmail').value;
+            var body = document.getElementById('emailBody').value;
+
+            // Define the recipient's email address
+            var recipientEmail = 'maathmphepo80@gmail.com';
+            
+            // Define the subject
+            var subject = 'Message from ' + userEmail;
+
+            // URL-encode the subject and body
+            var encodedSubject = encodeURIComponent(subject);
+            var encodedBody = encodeURIComponent(body + '\n\nFrom: ' + userEmail);
+
+            // Construct the mailto URL
+            var mailtoUrl = 'mailto:' + recipientEmail + '?subject=' + encodedSubject + '&body=' + encodedBody;
+
+            // Open the mailto link
+            window.location.href = mailtoUrl;
+        }
+    </script>
+</body>
+</html>
