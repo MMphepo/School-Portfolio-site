@@ -236,7 +236,7 @@ footer {
     border-width: 0px 7px 0px 0px;
     border-color: black;
     border-right-color: #00df81;
-    
+
     padding-left: 0.4em;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -252,7 +252,7 @@ footer {
     border-width: 0px 7px 0px 0px;
     border-color: black;
     border-right-color: #00df81;
-    
+
     padding-left: 0.4em;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -282,59 +282,102 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+
 .major-mono-display-bold {
     font-family: "Major Mono Display", monospace;
     font-weight: 800;
     font-style: normal;
 }
+
 .source-code-pro-light {
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  }
+}
 
 .raleway {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /* testimonial section container */
-.testimonials{
+.testimonials {
     overflow-x: scroll;
+    position: sticky;
 }
-.test-cont{
+.testimonials::-webkit-scrollbar{
+    display: none;
+}
+.testimonials-box{
+    position: relative;
+}
+
+/* Pseudo-elements for blur effect */
+.testimonials-box::before,
+.testimonials-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    pointer-events: none;
+    /* Allow clicks to pass through */
+    z-index: 1;
+}
+.space{
+    margin-left: 8em;
+}
+.testimonials-box::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.testimonials-box::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.test-cont {
     min-width: 40em;
 
 }
-.test-img-cont{
+
+.test-img-cont {
     width: 50%;
 }
-.test-img-cont>img{
+
+.test-img-cont>img {
     width: 100%;
     border-radius: 2em;
 }
-.test-text{
+
+.test-text {
     width: 50%;
 }
-.test-icon{
+
+.test-icon {
     font-size: 5em;
-    background-image: linear-gradient(150deg, #00df81, green );
+    background-image: linear-gradient(150deg, #00df81, green);
     background-clip: text;
     color: transparent;
 }
-.test-mess{
+
+.test-mess {
     font-size: 0.9em;
 }
-.test-name{
+
+.test-name {
     font-size: 0.95em;
 }
-.test-proff{
+
+.test-proff {
     font-size: 0.7em;
 }
-.test-btns{
+
+.test-btns {
     width: 7em;
     justify-content: space-between;
 }
